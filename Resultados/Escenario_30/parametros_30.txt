@@ -1,0 +1,46 @@
+ANALISIS DE CONECTIVIDAD ECOLOGICA
+===================================
+
+METODO DE CONECTIVIDAD
+----------------------
+IIC convencional normalizado basado en caminos mínimos topológicos (NL)
+IIC = sum(ai*aj/(1+nlij)) / A_L^2
+
+IIC_TOTAL = 0.275873202353
+sum_all = 3215413567.629654407501
+Umbral = 7500 m
+Nodos = 514
+Area total = 107960.195385590006 ha
+
+PARAMETROS GA
+-------------
+Corridas = 30
+Poblacion = 200
+Generaciones maximas = 500
+Crossover probability = 0.8
+Mutation probability = 0.2
+Uniform indpb = 0.5
+Mutation indpb = 0.04
+Tournament size = 3
+Elitismo = 10
+Lambda = 200.0
+Paciencia = 100
+Tolerancia = 1e-06
+Largest-first = 20%
+Random feasible = 80%
+
+RESULTADOS
+----------
+Fitness = (IIC(X) / IIC_TOTAL) * 100
+GA media = 15.2950248354%
+GA SD = 0.0619029219 pp
+GA minimo = 15.0454865617%
+GA maximo = 15.3322593971%
+dIIC = 15.0151503992%
+Heuristico = 15.0177398135%
+Aleatorio media = 9.7293826526%
+Aleatorio SD = 2.0145201661 pp
+Aleatorio intervalo empirico 95% = 5.4578340111 - 12.2425440624%
+GA - dIIC = 0.2798744361 pp
+GA - heuristico = 0.2772850219 pp
+Bootstrap IC95 de la media GA = 15.2699737499 - 15.3129511133%
